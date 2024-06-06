@@ -1,0 +1,228 @@
+body{
+    /* border:solid red; */
+    margin:0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(https://i.pinimg.com/originals/df/2f/e1/df2fe1c94284383ebc90771a84e148be.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.loginContainer{
+    /* border:solid black; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-550px, -225px);
+    width: 400px;
+    background: rgba(255, 255, 255, 0.658);
+    border-radius: 10px;
+}
+.loginContainer h1{
+    /* border:solid yellow; */
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+.loginContainer form{
+    /* border:solid peru; */
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .textField{
+    /* border:solid blue; */
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.textField input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.textField label{
+    /* border: solid green; */
+    position: absolute;
+    top:50%;
+    left: 5px;
+    color: #615f5f;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.textField span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;    
+    width: 0%;
+    height: 2px;
+    background-color: #2691d9;
+    transition: .5s;
+}
+.textField input:focus ~ label,
+.textField input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+.textField input:focus ~ span::before,
+.textField input:valid ~ span::before{
+    width: 100%;
+
+}
+.pass{
+    /* border: solid green; */
+    margin: -5px 0 20px 5px;
+    color: #615f5f;
+    cursor: pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    width:100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb00;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+}
+.signupLink{
+    /* border: solid green; */
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color:#666666;
+}
+.signupLink a{
+    color:#2691d9;
+    text-decoration: none;
+}
+.signupLink a:hover{
+    text-decoration: underline;
+}
+
+
+/* DIVIDER */
+
+
+.registrationContainer{
+    /* border:solid black; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50px, -225px);
+    width: 400px;
+    background: rgba(255, 255, 255, 0.658);
+    border-radius: 10px;
+}
+.registrationContainer h1{
+    /* border:solid yellow; */
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+.registrationContainer form{
+    /* border:solid peru; */
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .secondtextField{
+    /* border:solid blue; */
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.secondtextField input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.secondtextField label{
+    /* border: solid green; */
+    position: absolute;
+    top:50%;
+    left: 5px;
+    color: #615f5f;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.secondtextField span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;    
+    width: 0%;
+    height: 2px;
+    background-color: #2691d9;
+    transition: .5s;
+}
+.secondtextField input:focus ~ label,
+.secondtextField input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+.secondtextField input:focus ~ span::before,
+.secondtextField input:valid ~ span::before{
+    width: 100%;
+
+}
+.secondpass{
+    /* border: solid green; */
+    margin: -5px 0 20px 5px;
+    color: #615f5f;
+    cursor: pointer;
+}
+.secondpass:hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    width:100%;
+    margin-bottom: 30px;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+}
+.secondsignupLink{
+    /* border: solid green; */
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color:#666666;
+}
+.secondsignupLink a{
+    color:#2691d9;
+    text-decoration: none;
+}
+.secondsignupLink a:hover{
+    text-decoration: underline;
+}

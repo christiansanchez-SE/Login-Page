@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Login Container -->
+        <div class="loginContainer">
+            <h1>Login</h1>
+            <form method="post">
+                <div class="textField">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="textField">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <input type="submit" value="login">
+                <div class="signupLink">
+                    Not a member? <a href="#">Create an Account</a>
+                </div>
+            </form>
+        </div>
+<!--DIVIDER-->
+<!-- Registration Container -->
+        <div class="registrationContainer">
+            <h1>Sign Up</h1>
+            <form method="secondpost">
+                <div class="secondtextField">
+                    <input type="secondtext" required>
+                    <span></span>
+                    <label>Email Address</label>
+                </div>
+                <div class="secondtextField">
+                    <input type="secondpassword" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+
+<!--Adding More Boxes Down Below-->
+                <div class="secondtextField">
+                    <input type="secondtext" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="secondtextField">
+                    <input type="secondpassword" required>
+                    <span></span>
+                    <label>Confirm Password</label>
+                </div>
+                <input type="submit" value="Sign Up">
+                </div>
+            </form>
+        </div>
+
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
